@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Trip Plan | TripMate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>✈ TripMate</h2>
+        <a href="/">Home</a>
+    </nav>
+
+    <section class="result-section">
+        <div class="result-header">
+            <p class="tagline">YOUR JOURNEY STARTS HERE</p>
+            <h1>Your Trip to {{ destination }}</h1>
+            <p>{{ days }} Days of Exploration and Fun!</p>
+        </div>
+
+        <div class="budget-card">
+            <h3>Estimated Trip Budget</h3>
+            <h2>₹{{ "{:,}".format(budget) }}</h2>
+            <p>Approximate estimate, ₹2,000 per day</p>
+        </div>
+
+        <h2 class="itinerary-title">Your Day-wise Itinerary</h2>
+
+        <div class="itinerary-container">
+            {% for item in itinerary %}
+            <div class="day-card">
+                <div class="day-number">Day {{ item.day }}</div>
+                <div class="day-info">
+                    <h3>{{ item.place }}</h3>
+                    <p>Travel interest: {{ item.interest }}</p>
+                    <p>Enjoy exploring and discovering new places!</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <a href="/" class="back-button">← Plan Another Trip</a>
+    </section>
+
+    <footer>
+        <p>© 2026 TripMate | Happy Travelling! ❤️</p>
+    </footer>
+
+</body>
+</html>
