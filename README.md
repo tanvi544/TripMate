@@ -1,10 +1,20 @@
-# TripMate
-A trip planner built using Python Flask, HTML and CSS.
+# TripMate - Plan Your Journey
 
-## How to Run
-1. Install Python.
-2. Install dependencies:
-   pip install -r requirements.txt
-3. Run the application:
-   python app.py
-4. Open http://127.0.0.1:5000 in your browser.
+TripMate is a simple trip planning web application developed using HTML, CSS, Python and Flask.
+
+## Live Demo
+
+https://tripmate-sqmr.onrender.com
+
+## Features
+
+* Destination selection
+* Day-wise travel itinerary
+* Estimated trip budget
+
+## Technologies Used
+
+* HTML
+* CSS
+* Python Flask
+* Gunicorn
