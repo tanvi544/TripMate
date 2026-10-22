@@ -1,0 +1,259 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #243047;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: white;
+    box-shadow: 0 2px 12px #00000010;
+}
+
+.navbar h2 {
+    color: #176b87;
+    font-size: 26px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #176b87;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 650px;
+    padding: 65px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #dff6f0, #e5efff);
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 650px;
+}
+
+.tagline {
+    color: #168578;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 15px 0;
+    color: #17324d;
+}
+
+.subtitle {
+    color: #536579;
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+.trip-form {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px #23395718;
+    max-width: 480px;
+}
+
+.trip-form label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 6px;
+}
+
+.trip-form input,
+.trip-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d5dfe8;
+    border-radius: 8px;
+    background: white;
+    font-size: 15px;
+}
+
+.trip-form input:focus,
+.trip-form select:focus {
+    outline: 2px solid #64bdb0;
+}
+
+.trip-form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 22px;
+    background: #176b87;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.trip-form button:hover {
+    background: #10546b;
+}
+
+.features {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 28px;
+    font-size: 30px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 14px;
+    width: 260px;
+    box-shadow: 0 5px 20px #00000008;
+}
+
+.feature-card span {
+    font-size: 35px;
+}
+
+.feature-card h3 {
+    margin: 12px 0 8px;
+    color: #176b87;
+}
+
+.feature-card p {
+    color: #64748b;
+}
+
+.result-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 55px 20px;
+}
+
+.result-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.result-header h1 {
+    font-size: 38px;
+    margin: 10px 0;
+    color: #17324d;
+}
+
+.budget-card {
+    text-align: center;
+    background: #176b87;
+    color: white;
+    padding: 28px;
+    border-radius: 16px;
+    margin-bottom: 35px;
+}
+
+.budget-card h2 {
+    font-size: 38px;
+    margin: 8px 0;
+}
+
+.itinerary-title {
+    margin-bottom: 20px;
+}
+
+.day-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: white;
+    padding: 22px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000008;
+}
+
+.day-number {
+    background: #dff6f0;
+    color: #176b87;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.day-info h3 {
+    margin-bottom: 5px;
+}
+
+.day-info p {
+    color: #64748b;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: #176b87;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background: white;
+    color: #64748b;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 40px 5%;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .trip-form {
+        padding: 20px;
+    }
+
+    .features {
+        padding: 40px 5%;
+    }
+
+    .result-header h1 {
+        font-size: 30px;
+    }
+
+    .day-card {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
